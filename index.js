@@ -14,7 +14,7 @@ The function should:
   
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
-//using function to return obj with keys name, price, category
+
 function createMenuItem(name, price, category){
     return {name, price, category};
 }
@@ -30,7 +30,7 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-// invoking function
+
 console.log('task 1b:', createMenuItem('pizza', 5, 'Lunch'));
 console.log('task 1b:', createMenuItem('burger', 6, 'Lunch'));
 console.log('task 1b:', createMenuItem('waffles', 10, 'Brunch'));
@@ -51,10 +51,6 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  // create method called discount, takes param of customer and gives discount based on arguement passed in
-  //student or teacher discount should be 25% off
-  // the price - need to reference this.price
-  // public 10% discount
   discount: function(person){
     if(person === 'teacher' || person === 'student'){
       return this.price - (this.price * 0.25);
@@ -92,9 +88,6 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
 */
 reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
 console.log('task 4:', reviews);
-// not tested
-//add feedback to rating and console.log reviews array
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -123,11 +116,9 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-// 2 param array number
-// 
+
 function getReviewByIndex(array, number) {
   return `${array[number].name} gave the restaurant a ${array[number].rating} star review, and their feedback was: ${array[number].feedback}`;
-  // return the array[number.feedback]
 }
 
 console.log('task 6:', getReviewByIndex(reviews, 4));
@@ -167,8 +158,8 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(array, rating,) {
+    return array
   }
 
   
